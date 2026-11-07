@@ -1,0 +1,30 @@
+{
+  "bot_phone_number": "8801936236900",
+  "backend_webhook_url": "http://127.0.0.1:8000/api/auth/whatsapp/confirm",
+  "platform_name": "ETC-E-SPORTS",
+  "owner_name": "TAMIM HASAN NIROB (তামিম হাসান নিরব)",
+  "payment_info": {
+    "bkash": "01936236900",
+    "nagad": "01936236900",
+    "method": "SEND MONEY ONLY"
+  },
+  "social_links": {
+    "whatsapp_channel": "https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T",
+    "whatsapp_community_group": "https://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq",
+    "tiktok": "https://vm.tiktok.com/ZS9fL8U8DFc1D-vPfsC/"
+  },
+  "developer_info": {
+    "developer_name": "GOMON HUB (Mr GOMON)",
+    "email": "gomonhub@gmail.com",
+    "whatsapp": "01349966049",
+    "website": "https://rb.gy/feuqry",
+    "youtube": "https://www.youtube.com/@gomonhub",
+    "facebook": "https://www.facebook.com/gomonhub"
+  },
+  "messages": {
+    "success_verified": "✅ *ভেরিফিকেশন সফল হয়েছে!*\n\n『 ETC-E-SPORTS 』অফিসিয়াল লিংক:\n\n• টুর্নামেন্ট আপডেট চ্যানেল: https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T\n• প্লেয়ার ও টিম ফাইন্ডার গ্রুপ: https://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq\n• TikTok: https://vm.tiktok.com/ZS9fL8U8DFc1D-vPfsC/"
+  },
+  "mongo_uri": "mongodb+srv://gomongamer2_db_user:lcwHLVLYdnVWXqPF@cluster0.h1iagww.mongodb.net/whatsapp_bot?retryWrites=true&w=majority",
+  "gemini_api_key": "",
+  "ai_model": "gemini-3.5-flash-lite"
+}
