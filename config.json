@@ -1,0 +1,27 @@
+{
+  "session_name": "etc_auth_session",
+  "port": 3001,
+  "bot_phone_number": "8801409729584",
+  "backend_webhook_url": "http://127.0.0.1:8000/api/auth/whatsapp/confirm",
+  "platform_name": "ETC-E-SPORTS",
+  "owner_name": "TAMIM HASAN NIROB (তামিম হাসান নিরব)",
+  "social_links": {
+    "whatsapp_channel": "https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T",
+    "whatsapp_team_finder": "https://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq",
+    "tiktok": "https://vm.tiktok.com/ZS9fL8U8DFc1D-vPfsC/"
+  },
+  "developer_info": {
+    "developer_name": "GOMON HUB (Mr GOMON)",
+    "email": "gomonhub@gmail.com",
+    "whatsapp": "01349966049",
+    "website": "https://rb.gy/feuqry",
+    "youtube": "https://www.youtube.com/@gomonhub",
+    "facebook": "https://www.facebook.com/gomonhub"
+  },
+  "messages": {
+    "success_verified": "✅ *ভেরিফিকেশন সফল হয়েছে!*\n\n『 GOMON ARMY 』অফিসিয়াল সোশ্যাল লিংক:\n\n• TikTok: https://www.tiktok.com/@gomon_hub\n• Facebook: https://www.facebook.com/gomonhub\n• Instagram: https://www.instagram.com/gomon_gamer\n• Threads: https://www.threads.net/@gomon_hub\n• YouTube: https://www.youtube.com/@gomonhub\n• 2nd Channel: https://www.youtube.com/@mrgomonhub"
+  },
+  "mongo_uri": "mongodb+srv://gomongamer2_db_user:lcwHLVLYdnVWXqPF@cluster0.h1iagww.mongodb.net/whatsapp_bot?retryWrites=true&w=majority",
+  "gemini_api_key": "",
+  "ai_model": "gemini-3.5-flash-lite"
+}
