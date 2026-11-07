@@ -356,7 +356,7 @@ function getSmartFallbackReply(userMessage, hasImage = false, senderPhone = null
 
     // Identity inquiry
     if (asksWho) {
-        return `আমি GOMON HUB-এর তৈরি করা সাপোর্ট এজেন্ট... নিরব ভাইয়ের সাপোর্ট অ্যাডমিন ভাই! ETC-E-SPORTS-এর স্লট বুকিং, পেমেন্ট বা যেকোনো প্রয়োজনে কীভাবে সাহায্য করতে পারি বলেন?`;
+        return `আমি GOMON HUB-এর তৈরি করা সাপোর্ট এজেন্ট... নিরব ভাইয়ের সাপোর্ট অ্যাডমিন ভাই! ETHICAL E-SPORTS-এর স্লট বুকিং, পেমেন্ট বা যেকোনো প্রয়োজনে কীভাবে সাহায্য করতে পারি বলেন?`;
     }
 
     if (isHalaBanter) {
@@ -364,12 +364,12 @@ function getSmartFallbackReply(userMessage, hasImage = false, senderPhone = null
     }
 
     if (isScamAccusation) {
-        return `আরে না ভাই! ETC-E-SPORTS হলো নির্ভরযোগ্য ও জনপ্রিয় প্ল্যাটফর্ম যা পরিচালনা করেন তামিম হাসান নিরব ভাই। শত শত প্লেয়ার নিয়মিত আমাদের টুর্নামেন্টে অংশ নিচ্ছে। কোনো ফেক বা স্ক্যামের সুযোগ নেই ভাই ❤️`;
+        return `আরে না ভাই! ETHICAL E-SPORTS হলো নির্ভরযোগ্য ও জনপ্রিয় প্ল্যাটফর্ম যা পরিচালনা করেন তামিম হাসান নিরব ভাই। শত শত প্লেয়ার নিয়মিত আমাদের টুর্নামেন্টে অংশ নিচ্ছে। কোনো ফেক বা স্ক্যামের সুযোগ নেই ভাই ❤️`;
     }
 
     const asksTournament = /(?:tournament|slot|match|টুর্নামেন্ট|স্লট|ম্যাচ|খেলব|khelbo|khelte|scrim|scrims|স্কিম|champion rush)/i.test(raw);
     if (asksTournament) {
-        return `জি ভাই স্লট খালি আছে! ETC-E-SPORTS-এ প্রতিদিন দুটি সেগমেন্টে টুর্নামেন্ট অনুষ্ঠিত হয়:\n\n` +
+        return `জি ভাই স্লট খালি আছে! ETHICAL E-SPORTS-এ প্রতিদিন দুটি সেগমেন্টে টুর্নামেন্ট অনুষ্ঠিত হয়:\n\n` +
             `🎯 *১. ডেইলি স্কিম (Daily Scrims):*\n` +
             `• এন্ট্রি ফি: মাত্র ২৫৳ (বিকাল ৩:০০ টা থেকে রাত ৮:০০ টা)\n\n` +
             `🔥 *২. Champion Rush:*\n` +
@@ -387,7 +387,7 @@ function getSmartFallbackReply(userMessage, hasImage = false, senderPhone = null
     }
 
     if (asksAllSocial || (isAngry && asksAllSocial)) {
-        return `এই যে ভাই ETC-E-SPORTS-এর অফিসিয়াল সব প্ল্যাটফর্ম ও সোশ্যাল মিডিয়ার লিংক:\n\n` +
+        return `এই যে ভাই ETHICAL E-SPORTS-এর অফিসিয়াল সব প্ল্যাটফর্ম ও সোশ্যাল মিডিয়ার লিংক:\n\n` +
             `📢 টুর্নামেন্ট আপডেট চ্যানেল: https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T\n` +
             `👥 প্লেয়ার ও টিম ফাইন্ডার গ্রুপ: https://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq\n` +
             `🎵 TikTok: https://vm.tiktok.com/ZS9fL8U8DFc1D-vPfsC/`;
@@ -404,7 +404,7 @@ function getSmartFallbackReply(userMessage, hasImage = false, senderPhone = null
         return `আমাদের সব আপডেট ও টুর্নামেন্টের খবর পেতে অফিসিয়াল WhatsApp চ্যানেলে যুক্ত থাকুন ভাই:\nhttps://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T`;
     }
     if (asksTiktok) {
-        return `এই যে ভাই ETC-E-SPORTS-এর অফিসিয়াল টিকটক আইডি:\nhttps://vm.tiktok.com/ZS9fL8U8DFc1D-vPfsC/`;
+        return `এই যে ভাই ETHICAL E-SPORTS-এর অফিসিয়াল টিকটক আইডি:\nhttps://vm.tiktok.com/ZS9fL8U8DFc1D-vPfsC/`;
     }
     if (asksTg) {
         return `আমাদের অফিসিয়াল WhatsApp চ্যানেলে সব আপডেট পেয়ে যাবেন ভাই:\nhttps://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T`;
@@ -413,7 +413,7 @@ function getSmartFallbackReply(userMessage, hasImage = false, senderPhone = null
         return `আমাদের প্লেয়ার কমিউনিটি ও টিম ফাইন্ডার গ্রুপে জয়েন করুন ভাই:\nhttps://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq`;
     }
     if (asksWaChannel) {
-        return `এই যে ভাই ETC-E-SPORTS-এর অফিসিয়াল WhatsApp Channel:\n📢 https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T\n\nআর প্লেয়ার ও টিম ফাইন্ডার গ্রুপ:\n👥 https://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq`;
+        return `এই যে ভাই ETHICAL E-SPORTS-এর অফিসিয়াল WhatsApp Channel:\n📢 https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T\n\nআর প্লেয়ার ও টিম ফাইন্ডার গ্রুপ:\n👥 https://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq`;
     }
     if (asksRules) {
         return `নোটিশ:\n> সেন্ড মানি (Send Money) করে স্ক্রিনশট প্রদান করতে হবে।\n> টাকা দেওয়ার পর প্রমাণ স্বরূপ Screenshot জমা দিবেন এবং নম্বরের লাস্ট ডিজিট বলবেন।\n> টাকা দেওয়ার পর নিজ দায়িত্বে কনফার্ম গ্রুপের লিংক নিয়ে নিবেন।`;
@@ -435,13 +435,13 @@ function getSmartFallbackReply(userMessage, hasImage = false, senderPhone = null
     }
     const isInsisting = /(?:bolo|বলো|বল|please|প্লিজ|বলেন|bolte|kivave|কীভাবে|কিভাবে)/i.test(raw);
     if (isInsisting) {
-        return `আরে ভাই সত্যি বলতে এটা নিয়ে আমার জানা নাই 😂 স্লট বুকিং, পেমেন্ট বা ETC-E-SPORTS নিয়ে কিছু জানার থাকলে বলেন দেখছি!`;
+        return `আরে ভাই সত্যি বলতে এটা নিয়ে আমার জানা নাই 😂 স্লট বুকিং, পেমেন্ট বা ETHICAL E-SPORTS নিয়ে কিছু জানার থাকলে বলেন দেখছি!`;
     }
     if (alreadyGreeted) {
         const casualReplies = [
-            `জি ভাই বলেন, ETC-E-SPORTS-এর স্লট বুকিং, পেমেন্ট বা যেকোনো প্রয়োজনে কীভাবে সাহায্য করতে পারি?`,
+            `জি ভাই বলেন, ETHICAL E-SPORTS-এর স্লট বুকিং, পেমেন্ট বা যেকোনো প্রয়োজনে কীভাবে সাহায্য করতে পারি?`,
             `আছি ভাই! টুর্নামেন্ট স্লট, পেমেন্ট নম্বর বা লিংক লাগলে বলেন, দিয়ে দিচ্ছি।`,
-            `হ্যাঁ ভাই বলেন, শুনতে পাচ্ছি! ETC-E-SPORTS নিয়ে কোনো তথ্য লাগবে ভাই?`
+            `হ্যাঁ ভাই বলেন, শুনতে পাচ্ছি! ETHICAL E-SPORTS নিয়ে কোনো তথ্য লাগবে ভাই?`
         ];
         let chosen = casualReplies[Math.floor(Math.random() * casualReplies.length)];
         if (mem && mem.lastFallback && casualReplies.length > 1) {
@@ -451,7 +451,7 @@ function getSmartFallbackReply(userMessage, hasImage = false, senderPhone = null
         if (mem) mem.lastFallback = chosen;
         return chosen;
     }
-    return `জি ভাই বলেন, ETC-E-SPORTS-এর স্লট বা পেমেন্ট নিয়ে কোনো হেল্প লাগবে?`;
+    return `জি ভাই বলেন, ETHICAL E-SPORTS-এর স্লট বা পেমেন্ট নিয়ে কোনো হেল্প লাগবে?`;
 }
 
 function requestGeminiApi(modelName, data, apiKey, timeoutMs = 12000) {
@@ -673,13 +673,13 @@ async function generateAiSupportReply(userMessage, senderPhone, imageBase64 = nu
         return fallback;
     }
 
-    const systemPrompt = `You are a real human customer support admin for "ETC-E-SPORTS" on WhatsApp in Bangladesh. You are an actual Bangladeshi gamer guy chatting naturally with fellow gamers.
+    const systemPrompt = `You are a real human customer support admin for "ETHICAL E-SPORTS" on WhatsApp in Bangladesh. You are an actual Bangladeshi gamer guy chatting naturally with fellow gamers.
 
 PLATFORM IDENTITY & OWNER:
-- Platform: ETC-E-SPORTS
-- Business / Organization: ETC-E-SPORTS
+- Platform: ETHICAL E-SPORTS
+- Business / Organization: ETHICAL E-SPORTS
 - Owner: TAMIM HASAN NIROB (তামিম হাসান নিরব)
-- About: ETC-E-SPORTS হলো একটি জনপ্রিয় ও বিশ্বস্ত গেমিং এবং ই-স্পোর্টস অর্গানাইজেশন, যা পরিচালনা করেন TAMIM HASAN NIROB ভাই। এখানে নিয়মিত কাস্টম টুর্নামেন্ট, ম্যাচ ও গেমিং ইভেন্ট অনুষ্ঠিত হয়।
+- About: ETHICAL E-SPORTS হলো একটি জনপ্রিয় ও বিশ্বস্ত গেমিং এবং ই-স্পোর্টস অর্গানাইজেশন, যা পরিচালনা করেন TAMIM HASAN NIROB ভাই। এখানে নিয়মিত কাস্টম টুর্নামেন্ট, ম্যাচ ও গেমিং ইভেন্ট অনুষ্ঠিত হয়।
 
 OFFICIAL LINKS:
 - Tournament Updates WhatsApp Channel: https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T
@@ -734,7 +734,7 @@ NATURAL HUMAN TOURNAMENT SUPPORT FLOW:
        Confirm warmly and reassure them:
        "স্ক্রিনশটটি পেয়েছি ভাই! আপনার পেমেন্ট কনফার্ম দেখা যাচ্ছে। স্লটটি প্রসেসিংয়ে নেওয়া হয়েছে... আমাদের অ্যাডমিন তামিম হাসান নিরব ভাই কিছুক্ষণের মধ্যেই স্টেটমেন্ট চেক করে আপনাকে কনফার্ম গ্রুপের লিংক ইনবক্সে দিয়ে দিচ্ছেন ভাই! একটু অপেক্ষা করুন ❤️"
      - IF IT DOES NOT MATCH (wrong number, incorrect amount, blurred, or suspicious):
-       Politely inform: "ভাই স্ক্রিনশটে নম্বর বা টাকার পরিমাণ ম্যাচ করছে না, দয়া করে ETC-E-SPORTS-এর নম্বরে (01936236900) সঠিক ফি পাঠিয়ে ফ্রেশ স্ক্রিনশট দিন ভাই।"
+       Politely inform: "ভাই স্ক্রিনশটে নম্বর বা টাকার পরিমাণ ম্যাচ করছে না, দয়া করে ETHICAL E-SPORTS-এর নম্বরে (01936236900) সঠিক ফি পাঠিয়ে ফ্রেশ স্ক্রিনশট দিন ভাই।"
 
 5. DIRECT ADMIN COMMUNICATION REQUEST:
    - If user asks to talk directly to Admin (Nirob) or wants to make payment directly to Admin:
@@ -772,16 +772,16 @@ DEVELOPER / CREATOR MODE & GOMON HUB RULES:
   • If asked for ALL GOMON HUB links: List Tournament Site (https://rb.gy/feuqry), YouTube, Facebook, TikTok, Instagram, Threads cleanly.
 
 NUMBERS & PHONE NUMBER HANDLING RULES:
-- If user asks about or sends "01936236900": State that this is ETC-E-SPORTS's official Send Money number for bKash, Nagad, and Rocket to book slots.
+- If user asks about or sends "01936236900": State that this is ETHICAL E-SPORTS's official Send Money number for bKash, Nagad, and Rocket to book slots.
 - If user asks about or sends "01349966049": State that this is GOMON HUB (Mr GOMON ভাই)'s official WhatsApp contact for bot/website development (message only, no calls).
 - If user sends their personal phone number (e.g. 017..., 019..., 018...): Ask if this is the number they sent payment from, ask for screenshot + last digit to confirm their slot and give group link.
 - If user sends an in-game UID (8-10 digits): Ask if it's their Free Fire UID and which match/slot they wish to book.
 - If user sends random numbers: Politely ask what the number is for (payment, slot, or general inquiry) like a helpful gamer brother.
 
 IDENTITY RULE (WHEN ASKED "tmi k?", "tumi ke?", "কে তুমি?", "tmr porichoy ki?"):
-- Answer EXACTLY in natural, clean Bengali: "আমি GOMON HUB-এর তৈরি করা সাপোর্ট এজেন্ট... নিরব ভাইয়ের সাপোর্ট অ্যাডমিন ভাই! ETC-E-SPORTS-এর স্লট বুকিং, পেমেন্ট বা যেকোনো প্রয়োজনে কীভাবে সাহায্য করতে পারি বলেন?"
+- Answer EXACTLY in natural, clean Bengali: "আমি GOMON HUB-এর তৈরি করা সাপোর্ট এজেন্ট... নিরব ভাইয়ের সাপোর্ট অ্যাডমিন ভাই! ETHICAL E-SPORTS-এর স্লট বুকিং, পেমেন্ট বা যেকোনো প্রয়োজনে কীভাবে সাহায্য করতে পারি বলেন?"
 
-ETC-E-SPORTS OFFICIAL LINKS:
+ETHICAL E-SPORTS OFFICIAL LINKS:
 - Tournament Updates WhatsApp Channel: https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T
 - Player Community & Team Finder Group: https://chat.whatsapp.com/KjfaVC8nKj4B839GUUjoHq
 - TikTok: https://vm.tiktok.com/ZS9fL8U8DFc1D-vPfsC/
@@ -789,7 +789,7 @@ ETC-E-SPORTS OFFICIAL LINKS:
 
 ABSOLUTE HUMAN RULES (NEVER BREAK THESE):
 1. NEVER speak like an AI, a chatbot, or a corporate robot!
-2. NEVER say "ETC-E-SPORTS সাপোর্ট টিমে আপনাকে স্বাগতম", "কীভাবে সাহায্য করতে পারি?", "আমাদের সাপোর্ট টিমে নক করুন" (YOU ARE THE SUPPORT ADMIN!).
+2. NEVER say "ETHICAL E-SPORTS সাপোর্ট টিমে আপনাকে স্বাগতম", "কীভাবে সাহায্য করতে পারি?", "আমাদের সাপোর্ট টিমে নক করুন" (YOU ARE THE SUPPORT ADMIN!).
 3. NEVER repeat Salam in an active ongoing chat! If you already exchanged Salam or if it's mid-conversation, DO NOT say Salam again! Only say "ওয়ালাইকুম আসসালাম" if the user explicitly says Salam in this current message.
 4. Keep replies short, natural, friendly, and straight to the point (1 to 2 lines maximum) just like a real person typing on WhatsApp. Always finish your sentence completely and naturally; never cut off mid-sentence.
 5. Answer casual remarks naturally:
@@ -797,7 +797,7 @@ ABSOLUTE HUMAN RULES (NEVER BREAK THESE):
    - "ki koro" -> "এই তো ভাই সাপোর্ট চ্যাটে আছি। কোনো হেল্প লাগবে?"
    - "sure to?" -> "হ্যাঁ ভাই একদম সিওর! বলেন কী বিষয়?"
    - Accusations & Doubts ("scammer", "fake", "trust", "scam"):
-     Answer calm, friendly & reassuring: "আরে না ভাই! ETC-E-SPORTS হলো সম্পূর্ণ বিশ্বস্ত ও নির্ভরযোগ্য গেমিং প্ল্যাটফর্ম যা পরিচালনা করেন তামিম হাসান নিরব ভাই। শত শত প্লেয়ার নিয়মিত আমাদের টুর্নামেন্ট খেলছে। কোনো সন্দেহ বা ফেকের সুযোগ নেই ভাই ❤️"
+     Answer calm, friendly & reassuring: "আরে না ভাই! ETHICAL E-SPORTS হলো সম্পূর্ণ বিশ্বস্ত ও নির্ভরযোগ্য গেমিং প্ল্যাটফর্ম যা পরিচালনা করেন তামিম হাসান নিরব ভাই। শত শত প্লেয়ার নিয়মিত আমাদের টুর্নামেন্ট খেলছে। কোনো সন্দেহ বা ফেকের সুযোগ নেই ভাই ❤️"
 
 Platform Knowledge Base:
 ${JSON.stringify(knowledge, null, 2)}`;
@@ -1120,19 +1120,43 @@ async function startWhatsAppBot() {
 
         // All incoming WhatsApp messages go directly to AI Support Agent
         console.log(`💬 [MESSAGE RECEIVED] From: ${senderPhone} | Text: "${text}" | HasImage: ${!!imageBase64}`);
+
+        // Resolve destination JID: handle modern WhatsApp LID privacy routing
+        let targetReplyJid = senderJid;
+        const candidatePn = msg.key?.senderPn || msg.key?.participantPn || (msg.key?.remoteJidAlt && msg.key.remoteJidAlt.endsWith('@s.whatsapp.net') ? msg.key.remoteJidAlt : null);
+        if (candidatePn) {
+            targetReplyJid = candidatePn.includes('@') ? candidatePn : `${candidatePn}@s.whatsapp.net`;
+            console.log(`🎯 [LID RESOLVED TO PHONE] ${senderJid} -> ${targetReplyJid}`);
+        }
+
         try {
-            // Instantly notify user with typing presence so they know bot is online & responding
-            sock.sendPresenceUpdate('composing', senderJid).catch(() => {});
+            // Instantly notify user with typing presence
+            sock.sendPresenceUpdate('composing', targetReplyJid).catch(() => {});
             const aiReply = await generateAiSupportReply(text, senderPhone, imageBase64, imageMime);
-            await sock.sendMessage(senderJid, { text: aiReply });
-            console.log(`🤖 [AI SUPPORT REPLIED] To: ${senderPhone}`);
+
+            // Acknowledge incoming message as read
+            sock.readMessages([msg.key]).catch(() => {});
+
+            // Send reply directly with quoted context so WhatsApp mobile app displays it in the chat
+            await sock.sendMessage(targetReplyJid, { text: aiReply }, { quoted: msg });
+            console.log(`🤖 [AI SUPPORT REPLIED] To: ${targetReplyJid} (Customer: ${senderPhone})`);
+
+            // Dual delivery fallback: if resolved to phone, also send to LID with quoted context
+            if (targetReplyJid !== senderJid) {
+                try {
+                    await sock.sendMessage(senderJid, { text: aiReply }, { quoted: msg });
+                } catch (_) {}
+            }
         } catch (aiErr) {
             console.error(`❌ [AI SUPPORT ERROR] ${aiErr.message}`);
-            await sock.sendMessage(senderJid, {
-                text: `স্বাগতম ETC-E-SPORTS-এ!\nস্লট বুকিং, পেমেন্ট বা টুর্নামেন্ট নিয়ে যেকোনো হেল্প লাগলে জানান ভাই।\n\nYouTube: https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T`
-            });
+            const fallbackText = `স্বাগতম ETHICAL E-SPORTS-এ!\nস্লট বুকিং, পেমেন্ট বা টুর্নামেন্ট নিয়ে যেকোনো হেল্প লাগলে জানান ভাই।\n\nWhatsApp চ্যানেল: https://whatsapp.com/channel/0029VbDdlJj35fLvMYb5il2T`;
+            try {
+                await sock.sendMessage(targetReplyJid, { text: fallbackText }, { quoted: msg });
+            } catch (_) {
+                try { await sock.sendMessage(senderJid, { text: fallbackText }, { quoted: msg }); } catch (__) {}
+            }
         } finally {
-            sock.sendPresenceUpdate('paused', senderJid).catch(() => {});
+            sock.sendPresenceUpdate('paused', targetReplyJid).catch(() => {});
         }
     }
 
@@ -1148,8 +1172,8 @@ async function startWhatsAppBot() {
 
         if (isOffCmd) {
             setBotPaused(true);
-            console.log(`\n🛑 [ADMIN MASTER SWITCH] ETC-E-SPORTS AI Bot turned OFF by Admin.\n`);
-            const reply = `🔴 *ETC-E-SPORTS AI বট বন্ধ (OFF) করা হয়েছে!*\n\n` +
+            console.log(`\n🛑 [ADMIN MASTER SWITCH] ETHICAL E-SPORTS AI Bot turned OFF by Admin.\n`);
+            const reply = `🔴 *ETHICAL E-SPORTS AI বট বন্ধ (OFF) করা হয়েছে!*\n\n` +
                 `এখন থেকে এআই কোনো মেসেজের স্বয়ংক্রিয় উত্তর দেবে না। আপনি নিজে ম্যানুয়ালি কাস্টমারদের সাথে চ্যাট করতে পারবেন।\n\n` +
                 `▶️ পুনরায় চালু করতে লিখুন: *#bot on*`;
             try {
@@ -1162,8 +1186,8 @@ async function startWhatsAppBot() {
 
         if (isOnCmd) {
             setBotPaused(false);
-            console.log(`\n🟢 [ADMIN MASTER SWITCH] ETC-E-SPORTS AI Bot turned ON by Admin.\n`);
-            const reply = `🟢 *ETC-E-SPORTS AI বট চালু (ON) করা হয়েছে!*\n\n` +
+            console.log(`\n🟢 [ADMIN MASTER SWITCH] ETHICAL E-SPORTS AI Bot turned ON by Admin.\n`);
+            const reply = `🟢 *ETHICAL E-SPORTS AI বট চালু (ON) করা হয়েছে!*\n\n` +
                 `এখন থেকে এআই ২৪/৭ স্বয়ংক্রিয়ভাবে সব কাস্টমারদের মেসেজের রিপ্লাই দেবে।\n\n` +
                 `⏸️ সাময়িকভাবে বন্ধ করতে লিখুন: *#bot off*`;
             try {
@@ -1176,7 +1200,7 @@ async function startWhatsAppBot() {
 
         if (isStatusCmd) {
             console.log(`\nℹ️ [ADMIN MASTER SWITCH] Bot status queried by Admin.\n`);
-            const reply = `🤖 *ETC-E-SPORTS AI বট স্ট্যাটাস:*\n\n` +
+            const reply = `🤖 *ETHICAL E-SPORTS AI বট স্ট্যাটাস:*\n\n` +
                 `বর্তমান অবস্থা: ${isBotPaused ? '🔴 বন্ধ (PAUSED / OFF)' : '🟢 চালু (ACTIVE / ON)'}\n\n` +
                 `• বন্ধ করতে লিখুন: *#bot off*\n` +
                 `• চালু করতে লিখুন: *#bot on*`;
